@@ -1,7 +1,7 @@
 /* eslint-disable quotes */
 module.exports = {
   siteMetadata: {
-    title: `My website`,
+    title: `1degree2me`,
     googleVerification: `abcdefz`,
     disqus: `gatsby-typescript`
   },
@@ -67,8 +67,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby website`,
-        short_name: `Gatsby website`,
+        name: `1degree2me`,
+        short_name: `One degree to me - Covid Remembrance and Awareness Symbol`,
         start_url: `/`,
         background_color: `#f7f7f7`,
         theme_color: `#191919`,

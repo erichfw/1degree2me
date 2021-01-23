@@ -1,4 +1,4 @@
-import { Link } from "gatsby";
+import { Link } from "gatsby"
 import * as React from "react";
 import HeaderMenu from "./HeaderMenu/HeaderMenu";
 import SidebarMenu from "./SidebarMenu/SidebarMenu";
@@ -13,7 +13,7 @@ import { store } from "../store";
 export const menuItems = [
   { name: "Home", path: "/", exact: true, icon: "home", inverted: true },
   { name: "About", path: "/about/", exact: true, icon: "info circle" },
-  { name: "Blog", path: "/blog/", exact: false, icon: "newspaper" },
+  { name: "Get Involved", path: "/contactus/", exact: false, icon: "phone" },
 ];
 
 export interface LayoutProps {
@@ -33,8 +33,8 @@ const Layout = (props: LayoutProps) => {
 
         <SidebarMenu Link={Link} pathname={pathname} items={menuItems} visible={false} />
 
-        <Sidebar.Pusher style={{ minHeight: "100vh" }}>
-          {/* Header */}
+        <Sidebar.Pusher style={{ minHeight: "100vh", }}>
+          {/* Header  */}
           {isHome ? null : <HeaderMenu
             Link={Link}
             pathname={pathname}
@@ -42,14 +42,14 @@ const Layout = (props: LayoutProps) => {
           />}
 
           {/* Render children pages */}
-          <div style={{ paddingBottom: 60 }}>
+          <div style={{ paddingBottom: 0,}}>
             {props.children}
           </div>
 
           {/* Footer */}
-          <Segment inverted vertical style={{ position: "absolute", bottom: 0, width: "100%" }}>
+          <Segment inverted vertical style={{ position: "absolute", bottom: 0, width: "100%" ,}}>
             <Container textAlign="center">
-              <p>Powered with <Icon name="heart" /> by Gatsby 2.0</p>
+              <p>Powered with <Icon name="heart" /> by <a href="https://twitter.com/gatsbyjs">Gatsby 2.0</a>. Contribute at <a href="https://github.com/erichfw/1degree2me/issues"><Icon name="github" /></a>.</p>
             </Container>
           </Segment>
         </Sidebar.Pusher>

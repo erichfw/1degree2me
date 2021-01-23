@@ -5,6 +5,13 @@
     ],
     "jsRules": {},
     "rules": {
+        "max-line-length": [
+            false, 
+            {
+              "limit": 150, 
+              "ignore-pattern": "^import [^,]+ from |^export | implements"
+            }
+          ],
         "interface-name": [ "never-prefix" ],
         "member-access": [
             false
