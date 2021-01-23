@@ -9,6 +9,7 @@ import "../css/semantic.min.css";
 import "prismjs/themes/prism-okaidia.css";
 import { Provider } from "react-redux";
 import { store } from "../store";
+import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 export const menuItems = [
   { name: "Home", path: "/", exact: true, icon: "home", inverted: true },
@@ -49,7 +50,9 @@ const Layout = (props: LayoutProps) => {
           {/* Footer */}
           <Segment inverted vertical style={{ position: "absolute", bottom: 0, width: "100%" ,}}>
             <Container textAlign="center">
-              <p>Powered with <Icon name="heart" /> by <a href="https://twitter.com/gatsbyjs">Gatsby 2.0</a>. Contribute at <a href="https://github.com/erichfw/1degree2me/issues"><Icon name="github" /></a>.</p>
+              <p>Powered with <Icon name="heart" />
+              <OutboundLink href="https://twitter.com/gatsbyjs">Gatsby 2.0</OutboundLink>. Contribute at <OutboundLink href="https://github.com/erichfw/1degree2me/issues"><Icon name="github" /></OutboundLink>.
+              </p>
             </Container>
           </Segment>
         </Sidebar.Pusher>
