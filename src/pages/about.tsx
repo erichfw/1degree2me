@@ -7,23 +7,35 @@ const AboutPage = () => {
     <Container>
       <Segment vertical>
         <Header as="h2">
-          <Icon name="info circle" />
           <Header.Content>
-            About
+            About Yellow Square awareness campaigns
           </Header.Content>
         </Header>
       </Segment>
       <Segment vertical>
-        <p>
-          This starter was created by @fabien0102.
-        </p>
-        <p>
-          For any question, I'm on <a href="https://discord.gg/2bz8EzW" target="blank">discord #reactiflux/gatsby</a>
-        </p>
-        <p>
-          For any issues, any PR are welcoming
-          <a href="https://github.com/fabien0102/gatsby-starter/issues" target="blank"> on this repository</a>
-        </p>
+        <p> Coming soon </p>
+      </Segment>
+      <Segment vertical>
+        <Header as="h2">
+          <Header.Content>
+            The story
+          </Header.Content>
+        </Header>
+      </Segment>
+      <Segment vertical>
+        <p> Coming soon </p>
+      </Segment>
+      <Segment vertical>
+        <Header as="h2">
+          <Header.Content>
+            Related awareness campaings
+          </Header.Content>
+        </Header>
+      </Segment>
+      <Segment vertical>
+        <p> Red AIDS awareness ribbon </p>
+        <p> Red WII rememberance Poppy flower </p>
+        <p> Yellow daffodil for macmillan cancer awareness </p>
       </Segment>
     </Container>
   );

@@ -23,7 +23,9 @@ export default (props: HtmlProps) => {
     <html lang="en">
       <head>
         {props.headComponents}
-        <title>My website</title>
+        <title>1degree2me</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"></link>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
