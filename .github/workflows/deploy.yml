@@ -38,5 +38,5 @@ jobs:
       - name: Test site  
         run: npm run test   
       - name: Deploy site  
-        run: npm run deploy 
+        run: npm run deploy -y
         
