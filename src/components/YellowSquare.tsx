@@ -4,8 +4,8 @@ import {
   } from "semantic-ui-react";
 
 export interface SquareProps {
-    size : string
-    className : string
+    size: string;
+    className: string;
     children?: any;
 }
 
@@ -15,7 +15,7 @@ export interface SquareProps {
 //     },
 // }));
 
-export default function YellowSquare(props : SquareProps) {
+export default function YellowSquare(props: SquareProps) {
     // const classes = useStyles();
     return (
         <Container className={props.className}>
@@ -23,6 +23,5 @@ export default function YellowSquare(props : SquareProps) {
             <rect  x="0" y="0" width={props.size} height={props.size} stroke="#ffde32" fill=" #ffde32" stroke-width="5"/>
         </svg>
         </Container>
-    )
+    );
 }
-

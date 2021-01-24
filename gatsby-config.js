@@ -89,6 +89,13 @@ module.exports = {
         icon: `src/images/icon.svg`
       }
     },
+    // Deploy to S3 via AWS CLI (dependency on integration machine/localhost)
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "1degree2me.com"
+      }
+    },
     // This plugin generates a service worker and AppShell
     // html file so the site works offline and is otherwise
     // resistant to bad networks. Works with almost any

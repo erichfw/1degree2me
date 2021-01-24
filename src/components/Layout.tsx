@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+import { Link } from "gatsby";
 import * as React from "react";
 import HeaderMenu from "./HeaderMenu/HeaderMenu";
 import SidebarMenu from "./SidebarMenu/SidebarMenu";
@@ -34,7 +34,7 @@ const Layout = (props: LayoutProps) => {
 
         <SidebarMenu Link={Link} pathname={pathname} items={menuItems} visible={false} />
 
-        <Sidebar.Pusher style={{ minHeight: "100vh", }}>
+        <Sidebar.Pusher style={{ minHeight: "100vh" }}>
           {/* Header  */}
           {isHome ? null : <HeaderMenu
             Link={Link}
@@ -43,12 +43,12 @@ const Layout = (props: LayoutProps) => {
           />}
 
           {/* Render children pages */}
-          <div style={{ paddingBottom: 0,}}>
+          <div style={{ paddingBottom: 0}}>
             {props.children}
           </div>
 
           {/* Footer */}
-          <Segment inverted vertical style={{ position: "absolute", bottom: 0, width: "100%" ,}}>
+          <Segment inverted vertical style={{ position: "absolute", bottom: 0, width: "100%" }}>
             <Container textAlign="center">
               <p>Powered with <Icon name="heart" />
               <OutboundLink href="https://twitter.com/gatsbyjs">Gatsby 2.0</OutboundLink>. Contribute at <OutboundLink href="https://github.com/erichfw/1degree2me/issues"><Icon name="github" /></OutboundLink>.
