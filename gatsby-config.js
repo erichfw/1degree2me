@@ -1,4 +1,5 @@
 /* eslint-disable quotes */
+/* eslint-disable camelcase */
 module.exports = {
   siteMetadata: {
     title: `1degree2me`,
@@ -9,25 +10,38 @@ module.exports = {
     'MarkdownRemark.frontmatter.author': `AuthorJson`
   },
   plugins: [
+    // Google Anlytics with Gtag.
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-R7ZH01KK2V" // Google Analytics / GA
+        ],
+        // This object gets passed directly to the gtag config command
+        // This config will be shared across all trackingIds
+        gtagConfig: {
+          cookie_prefix: '_ga_1degree2me',
+          cookie_expires: 90 * 24 * 60 * 60
+        },
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: false,
+          // Setting this parameter is also optional
+          respectDNT: true
+          // Avoids sending pageview hits from custom paths
+          // exclude: ["/preview/**", "/do-not-track/me/too/"],
+        }
+      }
+    },
+    `gatsby-plugin-react-helmet`,
     // Expose `/data` to graphQL layer
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
         path: `${__dirname}/data`
-      }
-    },
-
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'YOUR_GOOGLE_ANALYTICS_TRACKING_ID',
-        // Puts tracking script in the head instead of the body
-        head: false,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true
       }
     },
 
@@ -63,7 +77,6 @@ module.exports = {
     // This plugin takes your configuration and generates a
     // web manifest file so your website can be added to your
     // homescreen on Android.
-    /* eslint-disable camelcase */
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -72,11 +85,10 @@ module.exports = {
         start_url: `/`,
         background_color: `#f7f7f7`,
         theme_color: `#191919`,
-        display: `minimal-ui`
+        display: `minimal-ui`,
+        icon: `src/images/icon.svg`
       }
     },
-    /* eslint-enable camelcase */
-
     // This plugin generates a service worker and AppShell
     // html file so the site works offline and is otherwise
     // resistant to bad networks. Works with almost any
