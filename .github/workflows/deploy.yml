@@ -36,7 +36,7 @@ jobs:
           npm ci
           npm run build --if-present
       - name: Test site  
-        run: npm test   
+        run: npm run test   
       - name: Deploy site  
-        run: npm deploy 
+        run: npm run deploy 
         
