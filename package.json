@@ -5,6 +5,7 @@
   "author": "Erich Wilgenbus <erichfw@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "clean":"gatsby clean",
     "start": "gatsby develop",
     "develop": "gatsby develop",
     "build": "gatsby build",

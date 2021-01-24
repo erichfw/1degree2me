@@ -31,12 +31,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Build site  
-        run: |
-          npm ci
-          npm run build --if-present
+      - name: NPM clean install modules
+        run: npm ci 
       - name: Test site  
-        run: npm run test   
-      - name: Deploy site  
-        run: npm run deploy -y
+        run: npm run test  
+      - name: Build production site  
+        run: npm run build --if-present
+      - name: Deploy production site  
+        run: npm run deploy -- -y
         
