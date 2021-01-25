@@ -1,3 +1,4 @@
+import { OutboundLink } from "gatsby-plugin-google-gtag";
 import * as React from "react";
 import { Header, Container, Segment } from "semantic-ui-react";
 import {withLayout} from "../components/Layout";
@@ -13,8 +14,10 @@ const ContactUs = () => {
         </Header>
       </Segment>
       <Segment vertical>
+        <p> Join the conversation on <OutboundLink href="https://www.facebook.com/1degree2me-101131795329284/">Facebook</OutboundLink></p>
+        <p> Join the conversation on <OutboundLink href="https://twitter.com/1degree2me">Twitter</OutboundLink></p>
         <p> Newsletter subscription coming soon </p>
-        <p> Social media integration coming soon </p>
+        
       </Segment>
       <Segment vertical>
         <Header as="h2">
