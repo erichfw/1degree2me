@@ -33,11 +33,11 @@ const AboutPage = () => {
         <p>Over the next three days, Dad rapidly deteriorated. He was moved to the intensive care unit and placed onto a ventilator. The doctors induced a coma to allow incubation. </p>
         <p>Dad pasted early morning on 15 January 2020. </p>
         <p>Mom is doing well. She is yet to show any symptoms. </p>
-        <p>The thing that struck me in all the subsequent conversations with family, friends and nosy neighbours was that, despite the growing incidence of Covid deaths, there seemed to be a prevailing sense of apathy. The consensus seemed to be that only "other" people were at risk. </p>
-        <p>What is apathy? Apathy is the person not wearing a mask at the local grocery store, or the person queueing up behind you at the post office mask half-down-the-chin. Apathy is the person who do not sanitise their hands regularly or the person molesting every avocado in the store before deciding to buy the premade guacamole.</p>
+        <p>The thing that struck me in all the subsequent conversations with family, friends and neighbours was that, despite the growing incidence of Covid deaths, there seemed to be a prevailing sense of apathy. The consensus seemed to be that only "other" people were at risk. </p>
+        <p>What is apathy? Apathy is the person not wearing a mask at the local grocery store, or the person queueing up behind you at the post office mask half-down-the-chin. Apathy is the person who do not sanitise their hands regularly or the person that touches every avocado on the shelf before deciding to buy the premade guacamole instead.</p>
         <p>I'll admit it:  I was not taking this pandemic too seriously either. "As long as Mom is careful", I thought. </p>
         <p>The reality is that those hollow numbers reported on the media cycle represent real people. Our people. My dad. Maybe your brother. The child of the woman in front of you in the checkout queue. Your already financially strained taxi driver's wife. The people that are passing are local community members. Not just a number.</p>
-        <p> If each person that has lost a parent, a partner, a family member or a friend wears a Yellow Square to show their first-degree loss, then that will make the magnitude of the total cumulative loss to this disease more visible. Making the impact of this disease more visible (or concrete)  will help to keep us vigilant. </p>
+        <p>If each person that has lost a parent, a partner, a family member or a friend wears a Yellow Square to show their first-degree loss, then that will make the magnitude of the total cumulative loss to this disease more visible. Making the impact of this disease more visible (or concrete)  will help to keep us vigilant. </p>
       </Segment>
       <Segment vertical>
         <Header as="h2">
